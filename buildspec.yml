@@ -1,0 +1,8 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "test - build 1234"
+      - docker compose -f docker-compose.yml up
+      - codebuild-breakpoint
